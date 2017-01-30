@@ -1,0 +1,259 @@
+/*===== MY STYLES =====*/
+@font-face {
+    font-family: 'grand_hotelregular';
+    src: url('../fonts/grandhotel-regular-webfont.eot');
+    src: url('../fonts/grandhotel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/grandhotel-regular-webfont.woff2') format('woff2'),
+         url('../fonts/grandhotel-regular-webfont.woff') format('woff'),
+         url('../fonts/grandhotel-regular-webfont.ttf') format('truetype'),
+         url('../fonts/grandhotel-regular-webfont.svg#grand_hotelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    
+}
+
+header h1, h2 {
+	font-family: 'grand_hotelregular', cursive;
+	font-weight: normal;
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+article h1{
+		font-family: 'grand_hotelregular', cursive;
+
+	margin-bottom: 15px;
+	font-size: 30px;
+		font-style: bold;
+
+
+}
+
+article h2{
+	margin-bottom: 15px;
+	font-style: bold;
+	margin-top: 15px;
+	font-size: 25px;
+
+}
+
+header {
+	background: #333 url("../images/bkg.png") repeat fixed;
+}
+
+header h1 {
+	font-size: 45px;
+}
+
+header h1 span {
+	font-size: 75px;
+    color: #a4b4d6;
+    font-style: italic;
+    text-shadow: 2px 2px black;
+}
+
+
+aside h2 {
+	font-size: 25px;
+	margin-bottom: 20px;
+
+}
+
+figure.asideFigure img {
+	margin-top: 15px;
+    height: 140px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+figure figcaption {
+	margin-top: 5px;
+    text-align: center;
+    color: #665a61;
+    font-style: italic; 
+    font-size: 14px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ===== NAV ===== */
+
+nav {
+    margin-bottom: 10px;
+}
+nav li {
+    margin: 0 5px 10px 0;
+    list-style: none;
+    display: inline-block;
+    display: inline;
+    /*ie7*/
+}
+nav a {
+    padding: 3px 12px;
+    text-decoration: none;
+    color: #999;
+    line-height: 100%;
+}
+nav a:hover {
+    color: #894a6f;
+    background: #a4b4d6;
+}
+nav.current a {
+    background: #a4b4d6;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* right nav */
+
+nav.right ul {
+    text-align: right;
+}
+
+/* center nav */
+
+nav.centerNav ul {
+    text-align: center;
+}
+
+
+
+/*===== Section transitions =====*/
+
+section {
+    position: relative;
+    height: 400px;
+    background-color: #66F;
+    text-align: center;
+    overflow: hidden;
+    -webkit-box-shadow: inset 0px 0px 0px 10px rgba(50, 50, 50, 0.5);
+       -moz-box-shadow: inset 0px 0px 0px 10px rgba(50, 50, 50, 0.5);
+           -box-shadow: inset 0px 0px 0px 10px rgba(50, 50, 50, 0.5);
+    -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+}
+
+section:hover {
+    -webkit-box-shadow: inset 0px 0px 0px 200px rgba(50, 50, 50, 0.2);
+       -moz-box-shadow: inset 0px 0px 0px 200px rgba(50, 50, 50, 0.2);
+           -box-shadow: inset 0px 0px 0px 200px rgba(50, 50, 50, 0.2);
+
+}
+
+section#s1 {
+    background: url(../images/Nantwich1.jpg) no-repeat center center;
+    -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+}
+
+section#s1:hover {
+    background: url(../images/Nantwich1.jpg) no-repeat center right;
+}
+
+section#s2 {
+    background: url(../images/Nantwich2.jpg) no-repeat center center;
+    -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+}
+
+section#s2:hover {
+    background: url(../images/Nantwich2.jpg) no-repeat center right;
+}
+
+section#s3 {
+    background: url(../images/Nantwich3.jpg) no-repeat center center;
+    -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+}
+
+section#s3:hover {
+    background: url(../images/Nantwich3.jpg) no-repeat center right;
+}
+
+section#s4 {
+    background: url(../images/Nantwich4.jpg) no-repeat center center;
+    -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+}
+
+section#s4:hover {
+    background: url(../images/Nantwich4.jpg) no-repeat center right;
+}
+
+section h1{
+    position: absolute;
+    font-size: 26px;
+    top: 30px;
+    color: #F60;
+    width: 100%;
+    text-transform: capitalize;
+    text-shadow: 0px 1px 0px rgba(150, 150, 150, 1);
+    -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+}
+
+section:hover h1 {
+    top: 90px;
+    color: #fff;
+    text-shadow: 0px 0px 20px rgba(150, 150, 150, 1);
+}
+
+section p {
+    position: absolute;
+    width: 100%;
+    padding: 10%;
+    bottom: -110px;
+    background-color: rgba(51, 51, 51, 0.75);
+    font-family: verdana, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-style: italic;
+    -webkit-transition: all 0.35s ease-out .2s;
+            transition: all 0.35s ease-out .2s;
+
+}
+
+section:hover p {
+    bottom: 0;
+    background-color: rgba(51, 51, 51, .75);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,111 @@
+body {
+	background: #96858F;
+}
+
+#container {
+	margin: 0 auto;
+	width: 100%;
+	background: #F0F0F0;
+	padding: 20px;
+}
+
+header, nav {
+	margin-bottom: 20px;
+	background: #c;
+	padding: 20px;
+}
+
+section {
+	float: none;
+	width: 100%;
+	margin-bottom: 20px;
+	border: solid 1px red;
+}
+
+article {
+	margin-bottom: 20px;
+	background: #DDDDDD;
+	padding: 20px;
+	float: none;	
+	width: 100%;
+ }
+
+aside {
+	margin-bottom: 20px;
+	background: #a4b4d6;
+	padding: 20px;
+	float: none;	
+	display: none; /* it will not be shown everywhere since other media queries inherit, */
+	/*so we need to fix it in media queries*/
+}
+
+footer {
+	background: #a4b4d6;
+	clear: none;
+	padding: 20px;
+}
+
+/*===== MEDIA QUERY TABLET LAYOUT =====*/
+/* 481px to 768px. Inherits styles from Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+	#container {
+	width: 96%;
+	}
+
+	section {
+		float: left;	
+		width: 50%;		
+	}
+
+	article {
+		float: left;	
+		width: 73%;
+		margin-right: 2%;
+	}
+
+	aside {
+		float: left;	
+		width: 25%;
+		background: #a4b4d6;
+		display: block;
+	}
+
+	footer {
+		clear: both;
+	}
+
+}
+
+/*===== MEDIA QUERY DESKTOP LAYOUT =====*/
+/* Desktop layout:  769px to a max of 1200px. Inherits styles from Mobile Layout. */
+
+@media only screen and (min-width: 769px) {
+
+	#container {
+	width: 90%;
+	max-width: 1200px;
+	}
+
+	article {	
+		width: 63%;
+		margin-right: 2%;
+	}
+
+	section {
+		float: left;	
+		width: 25%;		
+	}
+
+	aside {	
+		width: 35%;
+		background: #a4b4d6;
+		display: block;
+	}
+
+	footer {
+		clear: both;
+	}
+
+}
