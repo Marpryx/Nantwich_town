@@ -1,20 +1,8 @@
 /*===== MY STYLES =====*/
-@font-face {
-    font-family: 'grand_hotelregular';
-    src: url('../fonts/grandhotel-regular-webfont.eot');
-    src: url('../fonts/grandhotel-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/grandhotel-regular-webfont.woff2') format('woff2'),
-         url('../fonts/grandhotel-regular-webfont.woff') format('woff'),
-         url('../fonts/grandhotel-regular-webfont.ttf') format('truetype'),
-         url('../fonts/grandhotel-regular-webfont.svg#grand_hotelregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+footer.ftr{
+text-align: center;
 }
 
-body {
-    
-}
 
 header h1, h2 {
 	font-family: 'grand_hotelregular', cursive;
@@ -24,11 +12,11 @@ header h1, h2 {
 }
 
 article h1{
-		font-family: 'grand_hotelregular', cursive;
+  font-family: 'grand_hotelregular', cursive;
 
-	margin-bottom: 15px;
-	font-size: 30px;
-		font-style: bold;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-style: bold;
 
 
 }
@@ -80,6 +68,16 @@ figure.asideFigure img {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+figure#animationResto img{
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+
 }
 
 figure figcaption {
@@ -147,23 +145,23 @@ section {
     text-align: center;
     overflow: hidden;
     -webkit-box-shadow: inset 0px 0px 0px 10px rgba(50, 50, 50, 0.5);
-       -moz-box-shadow: inset 0px 0px 0px 10px rgba(50, 50, 50, 0.5);
-           -box-shadow: inset 0px 0px 0px 10px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: inset 0px 0px 0px 10px rgba(50, 50, 50, 0.5);
+    -box-shadow: inset 0px 0px 0px 10px rgba(50, 50, 50, 0.5);
     -webkit-transition: all 0.35s;
-            transition: all 0.35s;
+    transition: all 0.35s;
 }
 
 section:hover {
     -webkit-box-shadow: inset 0px 0px 0px 200px rgba(50, 50, 50, 0.2);
-       -moz-box-shadow: inset 0px 0px 0px 200px rgba(50, 50, 50, 0.2);
-           -box-shadow: inset 0px 0px 0px 200px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow: inset 0px 0px 0px 200px rgba(50, 50, 50, 0.2);
+    -box-shadow: inset 0px 0px 0px 200px rgba(50, 50, 50, 0.2);
 
 }
 
 section#s1 {
     background: url(../images/Nantwich1.jpg) no-repeat center center;
     -webkit-transition: all 0.35s;
-            transition: all 0.35s;
+    transition: all 0.35s;
 }
 
 section#s1:hover {
@@ -173,7 +171,7 @@ section#s1:hover {
 section#s2 {
     background: url(../images/Nantwich2.jpg) no-repeat center center;
     -webkit-transition: all 0.35s;
-            transition: all 0.35s;
+    transition: all 0.35s;
 }
 
 section#s2:hover {
@@ -183,7 +181,7 @@ section#s2:hover {
 section#s3 {
     background: url(../images/Nantwich3.jpg) no-repeat center center;
     -webkit-transition: all 0.35s;
-            transition: all 0.35s;
+    transition: all 0.35s;
 }
 
 section#s3:hover {
@@ -193,7 +191,7 @@ section#s3:hover {
 section#s4 {
     background: url(../images/Nantwich4.jpg) no-repeat center center;
     -webkit-transition: all 0.35s;
-            transition: all 0.35s;
+    transition: all 0.35s;
 }
 
 section#s4:hover {
@@ -209,7 +207,7 @@ section h1{
     text-transform: capitalize;
     text-shadow: 0px 1px 0px rgba(150, 150, 150, 1);
     -webkit-transition: all 0.35s;
-            transition: all 0.35s;
+    transition: all 0.35s;
 }
 
 section:hover h1 {
@@ -229,7 +227,7 @@ section p {
     color: #fff;
     font-style: italic;
     -webkit-transition: all 0.35s ease-out .2s;
-            transition: all 0.35s ease-out .2s;
+    transition: all 0.35s ease-out .2s;
 
 }
 
@@ -252,10 +250,9 @@ video {
 /*===== Animation =====*/
 
 div#anim {
-    width: 100px;
-    height: 100px;
+
     position: relative;
- -webkit-animation: myfirst 10s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation: myfirst 10s infinite; /* Safari 4.0 - 8.0 */
     -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
     animation: myfirst 10s infinite;
     animation-direction: alternate;
@@ -263,21 +260,118 @@ div#anim {
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes myfirst {
-    0%   {left: 10px; top: 10px;}
-    25%  {left: 573px; top: 5px;}
-    50%  {left: 573px; top: 355px;}
-    75%  {left: 10px; top: 355px;}
+    0%   {left: 0px; top: 0px;}
+    25%  {left: 572px; top: 0px;}
+    50%  {left: 572px; top: 365px;}
+    75%  {left: 10px; top: 365px;}
     100% {left: 10px; top: 10px;}
+
 }
 
 @keyframes myfirst {
-    0%   {left: 10px; top: 10px;}
-    25%  {left: 573px; top: 5px;}
-    50%  {left: 573px; top: 355px;}
-    75%  {left: 10px; top: 355px;}
+    0%   {left: 4px; top: 4px;}
+    25%  {left: 572px; top: 4px;}
+    50%  {left: 572px; top: 354px;}
+    75%  {left: 10px; top: 354px;}
     100% {left: 10px; top: 10px;}
 }
 
+
+/*Hotel pic animation*/
+
+h3{
+    padding-bottom: 15px;
+}
+
+img#top{
+    height: 250px;
+    width: 450px;
+    display: block;
+    margin: auto;
+}
+
+img#bottom{
+    height: 250px;
+    width: 450px;
+    display: block;
+    margin: auto;
+
+}
+
+/*Hotel's form*/
+
+input[type=text], select, textarea {
+    width: 100%; 
+    text-align: left;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+label#experience{
+    margin-top: 7px;
+}
+#rating{
+    height: 40px;
+    padding: 12px 20px;
+}
+
+input#radioButtons{
+    padding-bottom: 10px;
+}
+
+input[type=submit] {
+    text-align: center;
+    background-color: #a4b4d6;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #96858F;
+}
+
+div.forms {
+    border-radius: 5px;
+    background-color: #d8cbd3;
+    padding: 20px;
+}
+
+
+/*anim zoom*/
+
+#animZoom {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+#animZoom img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#animZoom img.transparent {
+    opacity:0;
+}
+#click {
+    cursor:pointer;
+}
 
 
 

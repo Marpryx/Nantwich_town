@@ -7,86 +7,140 @@
 	<link rel="stylesheet" type="text/css" href="../css/reset.css"> <!-- Preferably to have it 1st, as it loads 1st -->
 	<link rel="stylesheet" type="text/css" href="../css/layout.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+
+	<script>
+  $(document).ready(show_image);
+
+  function show_image(id) {
+   switch(id){
+      case 'top': $("#bottom").show();
+      $("#top").hide();
+      break;
+      case 'bottom': 		  $("#top").show();
+      $("#bottom").hide();
+      break;
+  }
+};
+</script>
 </head>
 
 
 <body>
-<div id="container">
-	<header id="containerHeader">
-		<h1><span>Nantwich</span> is the town of dream</h1>
-		<h2>a small market town and civil parish in Cheshire</h2>
-	</header>
-	
-	<nav class="centerNav">
-		<ul>
-			<li class="navigation"><a href="../index.html">Home</a></li>
-			<li><a href="nantwichMarket.html">Nantwich Market</a></li>
-			<li><a href="restaurants.html">Restaurants</a></li>
-			<li><a href="hotels.html">Hotels</a></li>
-			<li><a href="whatToVisit.html">What to Visit</a></li>
-		</ul>
-	</nav>
 
-	<article>
-		<h1>The best cheese in Cheshire</h1>
+    <div id="container">
+     <header id="containerHeader">
+      <h1><span>Nantwich</span> is the town of dream</h1>
+      <h2>a small market town and civil parish in Cheshire</h2>
+  </header>
 
-		<figure class="mainFigure">
-		<img src="../images/Nantwich5.jpg">
-		<figcaption>Nantwich cheese festival</figcaption>
-		</figure>
+  <nav class="centerNav">
+      <ul>
+       <li class="navigation"><a href="../index.html">Home</a></li>
+       <li><a href="nantwichMarket.html">Nantwich Market</a></li>
+       <li><a href="restaurants.html">Restaurants</a></li>
+       <li><a href="hotels.html">Hotels</a></li>
+       <li><a href="whatToVisit.html">What to Visit</a></li>
+   </ul>
+</nav>
 
-		<p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment. Salt has been used in the production of Cheshire cheese and in the tanning industry, both products of the dairy industry based in the Cheshire Plain around the town. <a href="http://google.com" target="_blank">"Nant" comes from the Welsh for brook or stream. Wich and wych are names used to denote brine springs or wells.</a> In 1194 there is a reference to the town as being called Nametwihc, which would indicate it was once the site of a pre-Roman Celtic nemeton or sacred grove.</p> 
+<article>
+  <h1>The best hotels in Nantwich</h1>
+  <h3>Click on the picture below</h3>
+  <div id="animZoom" class= "hoverZoom">
+      <figure>
+          <img onclick="javascript:show_image('top');" id="top" src="../images/hotel1.jpg" title="Click on this picture">
 
-		<h2>The best place to lieve with the family</h2>
+      </figure>
 
-		<p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment. Salt has been used in the production of Cheshire cheese and in the tanning industry, both products of the dairy industry based in the Cheshire Plain around the town. "Nant" comes from the Welsh for brook or stream. Wich and wych are names used to denote brine springs or wells. In 1194 there is a reference to the town as being called Nametwihc, which would indicate it was once the site of a pre-Roman Celtic nemeton or sacred grove.</p>
+      <figure>
+          <img onclick="javascript:show_image('bottom');" id= "bottom" src="../images/hotel2.jpg" title="Click on this picture">
+      </figure>
+  </div>
 
-		<h2>The best place to lieve with the family</h2>
 
-		<p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment. Salt has been used in the production of Cheshire cheese and in the tanning industry, both products of the dairy industry based in the Cheshire Plain around the town. "Nant" comes from the Welsh for brook or stream. Wich and wych are names used to denote brine springs or wells. In 1194 there is a reference to the town as being called Nametwihc, which would indicate it was once the site of a pre-Roman Celtic nemeton or sacred grove.</p>
+  <p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment. Salt has been used in the production of Cheshire cheese and in the tanning industry, both products of the dairy industry based in the Cheshire Plain around the town. <a href="http://google.com" target="_blank">"Nant" comes from the Welsh for brook or stream. Wich and wych are names used to denote brine springs or wells.</a> In 1194 there is a reference to the town as being called Nametwihc, which would indicate it was once the site of a pre-Roman Celtic nemeton or sacred grove.</p> 
 
-		<p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment. Salt has been used in the production of Cheshire cheese and in the tanning industry, both products of the dairy industry based in the Cheshire Plain around the town. "Nant" comes from the Welsh for brook or stream. Wich and wych are names used to denote brine springs or wells. In 1194 there is a reference to the town as being called Nametwihc, which would indicate it was once the site of a pre-Roman Celtic nemeton or sacred grove.</p>
+  <h2>The best place to lieve with the family</h2>
 
-		<h2>The best place to lieve with the family</h2>
+  <p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment. Salt has been used in the production of Cheshire cheese and in the tanning industry, both products of the dairy industry based in the Cheshire Plain around the town. "Nant" comes from the Welsh for brook or stream. Wich and wych are names used to denote brine springs or wells. In 1194 there is a reference to the town as being called Nametwihc, which would indicate it was once the site of a pre-Roman Celtic nemeton or sacred grove.</p>
 
-		<p> The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment. Salt has been used in the production of Cheshire cheese and in the tanning industry, both products of the dairy industry based in the Cheshire Plain around the town. "Nant" comes from the Welsh for brook or stream. Wich and wych are names used to denote brine springs or wells. In 1194 there is a reference to the town as being called Nametwihc, which would indicate it was once the site of a pre-Roman Celtic nemeton or sacred grove.</p>
+  <h2>The best place to lieve with the family</h2>
 
-	</article>
+  <p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment. Salt has been used in the production of Cheshire cheese and in the tanning industry, both products of the dairy industry based in the Cheshire Plain around the town. "Nant" comes from the Welsh for brook or stream. Wich and wych are names used to denote brine springs or wells. In 1194 there is a reference to the town as being called Nametwihc, which would indicate it was once the site of a pre-Roman Celtic nemeton or sacred grove.</p>
 
-	<aside>
-		<h2>Interesting facts</h2>
+  <p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment. Salt has been used in the production of Cheshire cheese and in the tanning industry, both products of the dairy industry based in the Cheshire Plain around the town. "Nant" comes from the Welsh for brook or stream. Wich and wych are names used to denote brine springs or wells. In 1194 there is a reference to the town as being called Nametwihc, which would indicate it was once the site of a pre-Roman Celtic nemeton or sacred grove.</p>
 
-		<p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment.</p>
+  <h2>Your review is important for us!</h2>
 
-		<figure class="asideFigure">
-		<img src="../images/Nantwich5.jpg">
-		<figcaption>Nantwich cheese festival</figcaption>
-		</figure>
+  <div class="forms">
+    <form action="MAILTO:someone@example.com">
 
-	</aside>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname">
 
-	<aside>
-		<h2>Information</h2>
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname">
 
-		<p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment.</p>
+      <label for="hotelName">Hotel's Name</label>
+      <input type="text" id="hName" name="hotelName">
 
-		<figure class="asideFigure">
-		<img src="../images/Nantwich5.jpg">
-		<figcaption>Nantwich cheese festival</figcaption>
-		</figure>
+      <label id="experience" for="experience">Review</label>
+      <textarea name="message"  rows="10" cols="30"></textarea>
 
-	</aside>
+      <label id="labelRating" for="rating">Rating</label>
+      <select id="rating" name="rating">
+        <option value="great">Great</option>
+        <option value="satisfied">Satisfied</option>
+        <option value="good">Good</option>
+        <option value="dissatisfied">Dissatisfied</option>
+        <option value="disapointed">Disapointed</option
+        </select>
+
+        <input type="radio" name="recommendation" value="recommend" checked> I will definitely recommend it!<br>
+        <input id="radioButtons" type="radio" name="recommendation" value="notRecommend"> I will not recommend it!<br>
+
+        <input type="submit" value="Submit" onclick="alert('Thank you!')">
+    </form>
+</div>
+
+</article>
 
 <aside>
-		<h2>Interesting information</h2>
+  <h2>Interesting facts</h2>
 
-		<p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment.</p>
+  <p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment.</p>
 
-	</aside>
+  <figure class="asideFigure">
+      <img src="../images/Nantwich5.jpg">
+      <figcaption>Nantwich cheese festival</figcaption>
+  </figure>
+
+</aside>
+
+<aside>
+  <h2>Information</h2>
+
+  <p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment.</p>
+
+  <figure class="asideFigure">
+      <img src="../images/Nantwich5.jpg">
+      <figcaption>Nantwich cheese festival</figcaption>
+  </figure>
+
+</aside>
+
+<aside>
+  <h2>Interesting information</h2>
+
+  <p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment.</p>
+
+</aside>
 <footer class="ftr">
-		
-		<p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment.</p>
-	</footer>
+    <p>&copy; NantwichTown, 2017</p>
+</footer>
 
 
 
