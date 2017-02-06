@@ -1,6 +1,6 @@
 /*===== MY STYLES =====*/
 footer.ftr{
-text-align: center;
+    text-align: center;
 }
 
 
@@ -327,7 +327,7 @@ input#radioButtons{
     padding-bottom: 10px;
 }
 
-input[type=submit] {
+input[type=submit], input[type=reset] {
     text-align: center;
     background-color: #a4b4d6;
     color: white;
@@ -338,7 +338,11 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type=reset] {
+    margin-left: 10px;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
     background-color: #96858F;
 }
 

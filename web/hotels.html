@@ -79,19 +79,19 @@
     <form action="MAILTO:someone@example.com">
 
       <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname">
+      <input type="text" id="fname" name="firstname" placeholder="First name" required>
 
       <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname">
+      <input type="text" id="lname" name="lastname" placeholder="Last name" required>
 
       <label for="hotelName">Hotel's Name</label>
-      <input type="text" id="hName" name="hotelName">
+      <input type="text" id="hName" name="hotelName" placeholder="Hotel name" required>
 
       <label id="experience" for="experience">Review</label>
-      <textarea name="message"  rows="10" cols="30"></textarea>
+      <textarea name="message"  rows="10" cols="30" placeholder="Review"></textarea>
 
       <label id="labelRating" for="rating">Rating</label>
-      <select id="rating" name="rating">
+      <select id="rating" name="rating" >
         <option value="great">Great</option>
         <option value="satisfied">Satisfied</option>
         <option value="good">Good</option>
@@ -103,6 +103,7 @@
         <input id="radioButtons" type="radio" name="recommendation" value="notRecommend"> I will not recommend it!<br>
 
         <input type="submit" value="Submit" onclick="alert('Thank you!')">
+        <input type="reset">
     </form>
 </div>
 
