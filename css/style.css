@@ -48,6 +48,8 @@ header h1 span {
 aside h2 {
 	font-size: 25px;
 	margin-bottom: 20px;
+    text-align: center;
+    font-weight: normal;
 
 }
 
@@ -64,6 +66,7 @@ figure.mainFigure img{
 figure.asideFigure img {
 	margin-top: 15px;
     height: 140px;
+    width:100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -106,27 +109,43 @@ nav li {
     display: inline;
     /*ie7*/
 }
-nav a {
+li a {
     padding: 3px 12px;
     text-decoration: none;
     color: #999;
     line-height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all .2s;
+           -transition: all .2s;
 }
-nav a:hover {
+
+li a:hover {
+    color: #894a6f;
+    background: #C0C0C0;
+    border-radius: 5px;
+}
+
+
+li a:visited {
     color: #894a6f;
     background: #a4b4d6;
 }
-nav.current a {
+
+li a:active {
+    color: #894a6f !important;
+    background: #a4b4d6;
+}
+
+
+
+li.current a {
     background: #a4b4d6;
     color: #fff;
     border-radius: 5px;
 }
 
-/* right nav */
 
-nav.right ul {
-    text-align: right;
-}
 
 /* center nav */
 
@@ -269,11 +288,11 @@ div#anim {
 }
 
 @keyframes myfirst {
-    0%   {left: 4px; top: 4px;}
-    25%  {left: 572px; top: 4px;}
-    50%  {left: 572px; top: 354px;}
-    75%  {left: 10px; top: 354px;}
-    100% {left: 10px; top: 10px;}
+    0%   {left: 0px; top: 6px;}
+    25%  {left: 562px; top: 0px;}
+    50%  {left: 562px; top: 354px;}
+    75%  {left: 0px; top: 354px;}
+    100% {left: 0px; top: 0px;}
 }
 
 
@@ -377,6 +396,110 @@ div.forms {
     cursor:pointer;
 }
 
+
+
+
+
+/*===== Nav ======*/
+
+
+
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: #F7F7F7;
+    color: #2EBDF2;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: 'Droid Sans Mono', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #2EBDF2;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+    text-transform: uppercase;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 900px){
+
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        border-bottom: 1px solid rgba(136, 136, 136, 1);
+        background: #333;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+        padding-bottom: 3px;
+        padding-top: 1px;
+        margin-top: -2px;
+    }
+
+    /*Display 'show menu' link*/
+    .show-menu {
+        display: block;
+    }
+
+    li.current a {
+    color: #2EBDF2 !important;
+    text-decoration: none;
+    background: #F7F7F7;
+    }
+
+    #container {
+      margin: 110px auto 0 auto;
+    }
+}
 
 
 

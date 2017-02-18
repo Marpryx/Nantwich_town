@@ -37,11 +37,13 @@
   </header>
 
   <nav class="centerNav">
-      <ul>
-       <li class="navigation"><a href="../index.html">Home</a></li>
+    <label for="show-menu" class="show-menu">Show Menu</label>
+                <input type="checkbox" id="show-menu" role="button">
+      <ul id="menu">
+       <li><a href="../index.html">Home</a></li>
        <li><a href="nantwichMarket.html">Nantwich Market</a></li>
        <li><a href="restaurants.html">Restaurants</a></li>
-       <li><a href="hotels.html">Hotels</a></li>
+       <li class="current"><a href="hotels.html">Hotels</a></li>
        <li><a href="whatToVisit.html">What to Visit</a></li>
    </ul>
 </nav>
@@ -51,12 +53,12 @@
   <h3>Click on the picture below</h3>
   <div id="animZoom" class= "hoverZoom">
       <figure>
-          <img onclick="javascript:show_image('top');" id="top" src="../images/hotel1.jpg" title="Click on this picture">
+          <img onclick="javascript:show_image('top');" class="mainFigure" id="top" src="../images/hotel1.jpg" title="Click on this picture">
 
       </figure>
 
       <figure>
-          <img onclick="javascript:show_image('bottom');" id= "bottom" src="../images/hotel2.jpg" title="Click on this picture">
+          <img onclick="javascript:show_image('bottom');" class="mainFigure" id= "bottom" src="../images/hotel2.jpg" title="Click on this picture">
       </figure>
   </div>
 

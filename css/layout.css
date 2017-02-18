@@ -1,32 +1,9 @@
+
 /*===== MEDIA QUERY PHONE LAYOUT =====*/
-
-#fixed {
-	position: fixed;
-	background-color: #FFF;
-	height: 220px;
-	top: 0;
-	width: 100%;
-	z-index: 100;
-}
-
-#wrapper {
-	width: 100%;
-	background: #FFF;
-	margin: 260px auto 0 auto;
-	padding: 20px 20px 20px 0;
-}
-
-header {
-	margin: 10px 5px;
-}
-
-main {
-	padding-left: 20px;
-}
-
 body {
 	background: #96858F;
 }
+
 
 #container {
 	margin: 0 auto;
@@ -35,18 +12,18 @@ body {
 	padding: 20px;
 }
 
+header h1, span {
+
+    font-size: 15px;
+}
+
+
 header, nav {
 	margin-bottom: 20px;
 	background: #c;
 	padding: 20px;
 }
 
-section {
-	float: none;
-	width: 100%;
-	margin-bottom: 20px;
-	border: solid 1px red;
-}
 
 article {
 	margin-bottom: 20px;
@@ -54,6 +31,13 @@ article {
 	padding: 20px;
 	float: none;	
 	width: 100%;
+}
+
+/*===== Aside css ======*/
+
+aside {
+	width: 100%;
+	float: none;
 }
 
 aside {
@@ -71,10 +55,31 @@ footer {
 	padding: 20px;
 }
 
-/*===== MEDIA QUERY TABLET LAYOUT =====*/
-/* 481px to 768px. Inherits styles from Mobile Layout. */
+*===== MEDIA QUERY MOBILE LAYOUT =====*/
+/* max 600 px */
 
-@media only screen and (min-width: 481px) {
+@media only screen and (max-width: 600px) {
+
+
+	article {	
+	width: 100%;
+}
+	aside {
+		width: 100%;
+		float: left;
+		display: none;
+	}
+
+
+
+
+}	
+
+
+/*===== MEDIA QUERY TABLET LAYOUT =====*/
+/* 600px to 800px. Inherits styles from Mobile Layout. */
+
+@media only screen and (min-width: 600px) {
 
 	#container {
 		width: 96%;
@@ -107,7 +112,7 @@ footer {
 /*===== MEDIA QUERY DESKTOP LAYOUT =====*/
 /* Desktop layout:  769px to a max of 1200px. Inherits styles from Mobile Layout. */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 800px) {
 
 	#container {
 		width: 90%;
