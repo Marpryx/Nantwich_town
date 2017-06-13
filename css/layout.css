@@ -77,9 +77,9 @@ footer {
 
 
 /*===== MEDIA QUERY TABLET LAYOUT =====*/
-/* 600px to 800px. Inherits styles from Mobile Layout. */
+/* 481px to 800px. Inherits styles from Mobile Layout. */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 481px) {
 
 	#container {
 		width: 96%;

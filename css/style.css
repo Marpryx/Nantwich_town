@@ -28,6 +28,9 @@ article h2{
 	font-size: 25px;
 
 }
+iframe#NantwichVideo{
+    margin-bottom: 15px;
+}
 
 header {
 	background: #333 url("../images/bkg.png") repeat fixed;
@@ -110,6 +113,7 @@ nav li {
     /*ie7*/
 }
 li a {
+
     padding: 3px 12px;
     text-decoration: none;
     color: #999;
@@ -279,11 +283,11 @@ div#anim {
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes myfirst {
-    0%   {left: 0px; top: 0px;}
-    25%  {left: 572px; top: 0px;}
-    50%  {left: 572px; top: 365px;}
-    75%  {left: 10px; top: 365px;}
-    100% {left: 10px; top: 10px;}
+    0%   {left: 0px; top: 6px;}
+    25%  {left: 562px; top: 0px;}
+    50%  {left: 562px; top: 354px;}
+    75%  {left: 0px; top: 354px;}
+    100% {left: 0px; top: 0px;}
 
 }
 
@@ -461,6 +465,83 @@ input[type=checkbox]{
 /*Show menu when invisible checkbox is checked*/
 input[type=checkbox]:checked ~ #menu{
     display: block;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    
+    section{
+        /*visibility: hidden; //just in case if I want to hide it*/
+        float: left;    
+        width: 25%;     
+    
+    }
+
+    section h1{
+        font-size: 10px;
+    }
+
+    section p{
+        font-size: 7px;
+    }
+
+    #container h1 {
+        font-size: 20px;
+    }
+
+    #container h2 {
+        font-size: 15px;
+    }
+
+    #animationResto, #anim{   /*To hide animation and move paragraph to its place*/
+        visibility: hidden;
+        clear: both;
+        float: left;
+        margin: 10px auto 5px 20px;
+        width: 28%;
+        display: none;
+    }
+
+    #animZoom figure img {
+        display: block;
+    margin: auto;
+    width: 65%;
+    }
+
+    #NantwichVideo{
+        width: 100%;
+    }
+
+    ul {
+        position: static;
+        display: none;
+
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+
+    li a {
+    display: block;
+    /* min-width: 140px; */
+    /* height: 50px; */
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #2f3036;
+    text-decoration: none;
 }
 
 /*Responsive Styles*/
