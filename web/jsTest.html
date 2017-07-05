@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -10,28 +9,33 @@
 	<link rel="stylesheet" type="text/css" href="../css/layout.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="stylesheet" type="text/css" href="../css/nantwichMarket.css">
+  <script src="../javaScript/nantwich.js"></script>
 
 	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 
 
-	<script>
-  $(document).ready(show_image);
+<style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        /*height: 100%;*/
+        height: 350px;
+        width: 550px;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
 
-  function show_image(id) {
-   switch(id){
-      case 'top': $("#bottom").show();
-      $("#top").hide();
-      break;
-      case 'bottom': 		  $("#top").show();
-      $("#bottom").hide();
-      break;
-  }
-};
-</script>
 </head>
 
 
 <body>
+
+
 
     <div id="container">
      <header id="containerHeader">
@@ -46,74 +50,50 @@
        <li><a href="../index.html">Home</a></li>
        <li><a href="nantwichMarket.html">Nantwich Market</a></li>
        <li><a href="restaurants.html">Restaurants</a></li>
-       <li class="current"><a href="hotels.html">Hotels</a></li>
+       <li><a href="hotels.html">Hotels</a></li>
        <li><a href="whatToVisit.html">What to Visit</a></li>
-       <li><a href="jsTest.html">jsTest</a></li>
+      <li class="current"><a href="jsTest.html">jsTest</a></li>
+
    </ul>
 </nav>
 
+
+
 <article>
+
+<div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBITz9zn53RiWSRBXkbZBy6UUtGon6tdBM&callback=initMap"></script>
+
+ 
+
+    
   <h1>The best hotels in Nantwich</h1>
-  <h3>Click on the picture below</h3>
-  <div id="animZoom" class= "hoverZoom">
-      <figure>
-          <img onclick="javascript:show_image('top');" class="mainFigure" id="top" src="../images/hotel1.jpg" title="Click on this picture">
-
-      </figure>
-
-      <figure>
-          <img onclick="javascript:show_image('bottom');" class="mainFigure" id= "bottom" src="../images/hotel2.jpg" title="Click on this picture">
-      </figure>
-  </div>
+  
 
 
   <p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment. Salt has been used in the production of Cheshire cheese and in the tanning industry, both products of the dairy industry based in the Cheshire Plain around the town. <a href="http://google.com" target="_blank">"Nant" comes from the Welsh for brook or stream. Wich and wych are names used to denote brine springs or wells.</a> In 1194 there is a reference to the town as being called Nametwihc, which would indicate it was once the site of a pre-Roman Celtic nemeton or sacred grove.</p> 
 
-  <h2>The best place to lieve with the family</h2>
 
-  <p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment. Salt has been used in the production of Cheshire cheese and in the tanning industry, both products of the dairy industry based in the Cheshire Plain around the town. "Nant" comes from the Welsh for brook or stream. Wich and wych are names used to denote brine springs or wells. In 1194 there is a reference to the town as being called Nametwihc, which would indicate it was once the site of a pre-Roman Celtic nemeton or sacred grove.</p>
 
   <h2>The best place to lieve with the family</h2>
 
   <p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment. Salt has been used in the production of Cheshire cheese and in the tanning industry, both products of the dairy industry based in the Cheshire Plain around the town. "Nant" comes from the Welsh for brook or stream. Wich and wych are names used to denote brine springs or wells. In 1194 there is a reference to the town as being called Nametwihc, which would indicate it was once the site of a pre-Roman Celtic nemeton or sacred grove.</p>
 
-  <p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment. Salt has been used in the production of Cheshire cheese and in the tanning industry, both products of the dairy industry based in the Cheshire Plain around the town. "Nant" comes from the Welsh for brook or stream. Wich and wych are names used to denote brine springs or wells. In 1194 there is a reference to the town as being called Nametwihc, which would indicate it was once the site of a pre-Roman Celtic nemeton or sacred grove.</p>
 
-  <h2>Your review is important for us!</h2>
-
-  <div class="forms">
-    <form action="MAILTO:someone@example.com">
-
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="First name" required>
-
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Last name" required>
-
-      <label for="hotelName">Hotel's Name</label>
-      <input type="text" id="hName" name="hotelName" placeholder="Hotel name" required>
-
-      <label id="experience" for="experience">Review</label>
-      <textarea name="message"  rows="10" cols="30" placeholder="Review"></textarea>
-
-      <label id="labelRating" for="rating">Rating</label>
-      <select id="rating" name="rating" >
-        <option value="great">Great</option>
-        <option value="satisfied">Satisfied</option>
-        <option value="good">Good</option>
-        <option value="dissatisfied">Dissatisfied</option>
-        <option value="disapointed">Disapointed</option
-        </select>
-
-        <input type="radio" name="recommendation" value="recommend" checked> I will definitely recommend it!<br>
-        <input id="radioButtons" type="radio" name="recommendation" value="notRecommend"> I will not recommend it!<br>
-
-        <input type="submit" value="Submit" onclick="alert('Thank you!')">
-        <input type="reset">
-    </form>
-</div>
 
 </article>
+
+   
+
 
 <aside>
   <h2>Interesting facts</h2>
@@ -139,12 +119,12 @@
 
 </aside>
 
-<aside>
+<!-- <aside>
   <h2>Interesting information</h2>
 
   <p>The origins of the settlement date to Roman times, when salt from Nantwich was used by the Roman garrisons at Chester (Deva Victrix) and Stoke-on-Trent as both a preservative and a condiment.</p>
 
-</aside>
+</aside> -->
 <footer class="ftr">
     <p>&copy; NantwichTown, 2017</p>
 </footer>
