@@ -157,7 +157,11 @@ nav.centerNav ul {
     text-align: center;
 }
 
-
+    #map {
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 /*===== Section transitions =====*/
 
@@ -580,6 +584,7 @@ input[type=checkbox]:checked ~ #menu{
     #container {
       margin: 110px auto 0 auto;
     }
+
 }
 
 

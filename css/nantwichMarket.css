@@ -14,7 +14,7 @@
 div#columns figure {
     background: #fefefe;
     border: 3px solid #fcfcfc;
-    box-shadow: 0 2px 2px rgba(34, 25, 25, 0.4);
+    box-shadow: 0 2px 0px rgba(34, 25, 25, 0.4);
     margin: 0 2px 15px;
     padding: 15px; 
     padding-bottom: 10px;
@@ -77,4 +77,3 @@ div#columns figcaption {
 }
 
 div#columns:hover figure:not(:hover) {opacity: 0.4;}
-
