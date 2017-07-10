@@ -33,6 +33,12 @@ article {
 	width: 100%;
 }
 
+div#map{
+	width: 100%;
+}
+
+
+
 /*===== Aside css ======*/
 
 aside {
@@ -73,6 +79,7 @@ footer {
 
 
 
+
 }	
 
 
@@ -107,6 +114,8 @@ footer {
 		clear: both;
 	}
 
+	
+
 }
 
 /*===== MEDIA QUERY DESKTOP LAYOUT =====*/
@@ -138,5 +147,10 @@ footer {
 	footer {
 		clear: both;
 	}
+	div#animZoom{
+	width: 100%;
+}
+
+
 
 }

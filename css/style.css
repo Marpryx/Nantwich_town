@@ -30,6 +30,7 @@ article h2{
 }
 iframe#NantwichVideo{
     margin-bottom: 15px;
+    width:100%;
 }
 
 header {
@@ -77,11 +78,12 @@ figure.asideFigure img {
 }
 
 figure#animationResto img{
-    height: 350px;
+    width:100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    margin-top: -95px;
 
 
 }
@@ -277,16 +279,23 @@ video {
 /*===== Animation =====*/
 
 div#anim {
-
+    width: 100px;
+    height: 100px;
+    background-color: none;
     position: relative;
-    -webkit-animation: myfirst 10s infinite; /* Safari 4.0 - 8.0 */
-    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
-    animation: myfirst 10s infinite;
-    animation-direction: alternate;
+    -webkit-animation-name: example; /*Chrome, Safari, Opera*/
+    -webkit-animation-duration: 10s; /*Chrome, Safari, Opera*/
+    -webkit-animation-iteration-count: infinite; /*Chrome, Safari, Opera*/
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: top left;
+
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes myfirst {
+/*@-webkit-keyframes myfirst {
     0%   {left: 0px; top: 6px;}
     25%  {left: 562px; top: 0px;}
     50%  {left: 562px; top: 354px;}
@@ -301,8 +310,20 @@ div#anim {
     50%  {left: 562px; top: 354px;}
     75%  {left: 0px; top: 354px;}
     100% {left: 0px; top: 0px;}
+}*/
+
+/*Chrome, Safari, Opera*/
+@-webkit-keyframes example {
+    0% {transform: rotate(0);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
 }
 
+@keyframes example {
+    0% {transform: rotate(0);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
 
 /*Hotel pic animation*/
 
