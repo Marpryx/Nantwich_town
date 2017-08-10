@@ -3,6 +3,38 @@ footer.ftr{
     text-align: center;
 }
 
+p#todayIs, p#currentData{
+ display: inline;
+}
+
+/*.weatherNantwich p{
+    display: inline;
+}*/
+
+/*.day1 p{
+    display: inline;
+}
+
+.day2 p{
+    display: inline;
+}
+*/
+
+.day{
+display: inline-block;
+padding-right: 20px; 
+}
+
+#month1, #day1, #month2, #day2, #month3, #day3{
+    display: inline;
+}
+.headerWeather p{
+    display: inline;
+    margin-left: 45px;
+    
+}
+
+
 
 header h1, h2 {
 	font-family: 'grand_hotelregular', cursive;
