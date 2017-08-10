@@ -47,32 +47,6 @@ function getTodayWeather(){
 
   });
 
-//   $.getJSON(weatherApi, function(result)
-//   {
-//     if (result !== null) {
-
-// //document.getElementById("demo").innerHTML =  result.current_observation.temp_c;
-// var pic = result.current_observation.image.url;
-// console.log(result.current_observation.image.url);
-
-// document.getElementById("pic").innerHTML = '<img src=' + result.current_observation.icon_url + '>';
-
-
-//       // $.each(result.items, function(i, item) {                 
-
-//       // });
-//     }
-
-
-
-//   });
-
-
-//relative_humidity
-
-
-
-//weather
 
 
 }
@@ -94,36 +68,29 @@ $.getJSON(weatherApi, function(result)
 //   $("#weatherFor").prepend("<p>High temperature: </p>");
 // });
 
-document.getElementById("month1").innerHTML =  result.forecast.simpleforecast.forecastday[1].date.monthname + ", ";
-document.getElementById("day1").innerHTML =  result.forecast.simpleforecast.forecastday[1].date.day;
+var weatherHTML = "";
 
-document.getElementById("iconDay").innerHTML = '<img src=' + result.forecast.simpleforecast.forecastday[1].icon_url + '>';
-document.getElementById("temperatureDay").innerHTML = result.forecast.simpleforecast.forecastday[1].high.celsius + "&degC" + "/" + result.forecast.simpleforecast.forecastday[1].low.celsius + "&degC";
-document.getElementById("conditionDay").innerHTML =  result.forecast.simpleforecast.forecastday[1].conditions;
-document.getElementById("humidityDay").innerHTML = result.forecast.simpleforecast.forecastday[1].avehumidity + "%";
+for( var index = 1; index < 6; index++ ) {
+  var monthName =  result.forecast.simpleforecast.forecastday[index].date.monthname;
+  var dayNum = result.forecast.simpleforecast.forecastday[index].date.day;
+  var pic = '<img src=' + result.forecast.simpleforecast.forecastday[index].icon_url + '>';
+  var temperature = result.forecast.simpleforecast.forecastday[index].high.celsius + "&degC" + "/" + result.forecast.simpleforecast.forecastday[index].low.celsius + "&degC";
+  var condition = result.forecast.simpleforecast.forecastday[index].conditions;
+  var humidity = result.forecast.simpleforecast.forecastday[index].avehumidity + "%";
+  // document.getElementById("day" + index).innerHTML =  result.forecast.simpleforecast.forecastday[index].date.day;
 
-
-//day 2
-
-document.getElementById("month2").innerHTML =  result.forecast.simpleforecast.forecastday[2].date.monthname + ", ";
-document.getElementById("day2").innerHTML =  result.forecast.simpleforecast.forecastday[2].date.day;
-
-document.getElementById("iconDay2").innerHTML = '<img src=' + result.forecast.simpleforecast.forecastday[2].icon_url + '>';
-document.getElementById("temperatureDay2").innerHTML = result.forecast.simpleforecast.forecastday[2].high.celsius + "&degC" + "/" + result.forecast.simpleforecast.forecastday[1].low.celsius + "&degC";
-document.getElementById("conditionDay2").innerHTML =  result.forecast.simpleforecast.forecastday[2].conditions;
-document.getElementById("humidityDay2").innerHTML = result.forecast.simpleforecast.forecastday[2].avehumidity + "%";
+  // document.getElementById("iconDay" + index).innerHTML = '<img src=' + result.forecast.simpleforecast.forecastday[index].icon_url + '>';
+  // document.getElementById("temperatureDay" + index).innerHTML = result.forecast.simpleforecast.forecastday[index].high.celsius + "&degC" + "/" + result.forecast.simpleforecast.forecastday[index].low.celsius + "&degC";
+  // document.getElementById("conditionDay" + index).innerHTML =  result.forecast.simpleforecast.forecastday[index].conditions;
+  // document.getElementById("humidityDay" + index).innerHTML = result.forecast.simpleforecast.forecastday[index].avehumidity + "%";
 
 
-//day 3
+weatherHTML += '<div class="day"><p id="month1">' + monthName + ',' + ' </p><p id="day1">' + dayNum + '</p><p id="iconDay1">' + pic + '</p><p id="temperatureDay1">' + temperature + '</p><p id="conditionDay1">' + condition + '</p><p id="humidityDay1">' + humidity + '</p> </div>';
 
-document.getElementById("month3").innerHTML =  result.forecast.simpleforecast.forecastday[3].date.monthname + ", ";
-document.getElementById("day3").innerHTML =  result.forecast.simpleforecast.forecastday[3].date.day;
+}
 
-document.getElementById("iconDay3").innerHTML = '<img src=' + result.forecast.simpleforecast.forecastday[3].icon_url + '>';
-document.getElementById("temperatureDay3").innerHTML = result.forecast.simpleforecast.forecastday[3].high.celsius + "&degC" + "/" + result.forecast.simpleforecast.forecastday[1].low.celsius + "&degC";
-document.getElementById("conditionDay3").innerHTML =  result.forecast.simpleforecast.forecastday[3].conditions;
-document.getElementById("humidityDay3").innerHTML = result.forecast.simpleforecast.forecastday[3].avehumidity + "%";
 
+$('#weatherForecast').html(weatherHTML);
 
 }
 
@@ -134,6 +101,3 @@ document.getElementById("humidityDay3").innerHTML = result.forecast.simpleforeca
 
 }
 
-// function setWeatherOnPage(){
-//   document.getElementById("demo").innerHTML = getWeather();
-// }

@@ -22,10 +22,10 @@ p#todayIs, p#currentData{
 
 .day{
 display: inline-block;
-padding-right: 20px; 
+padding-right: 25px; 
 }
 
-#month1, #day1, #month2, #day2, #month3, #day3{
+#month1, #day1, #month2, #day2, #month3, #day3, #month4, #day4, #month5, #day5{
     display: inline;
 }
 .headerWeather p{
