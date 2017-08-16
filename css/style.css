@@ -7,19 +7,6 @@ p#todayIs, p#currentData{
  display: inline;
 }
 
-/*.weatherNantwich p{
-    display: inline;
-}*/
-
-/*.day1 p{
-    display: inline;
-}
-
-.day2 p{
-    display: inline;
-}
-*/
-
 .day{
 display: inline-block;
 padding-right: 25px; 
@@ -33,6 +20,10 @@ padding-right: 25px;
     margin-left: 45px;
     
 }
+
+/*#temperatureDay1{
+    background-color: #96858F;
+}*/
 
 
 
