@@ -25,7 +25,9 @@ padding-right: 25px;
     background-color: #96858F;
 }*/
 
-
+h1#visitHeader{
+    margin-top: 20px;
+}
 
 header h1, h2 {
 	font-family: 'grand_hotelregular', cursive;
